@@ -25,8 +25,8 @@ public class Avoid implements Behavior {
 
 	@Override
 	public void action() {
-		SensorMode lightLeft = colLeft.getRedMode();
-		SensorMode lightRight = colRight.getRedMode();
+		SensorMode lightLeft = colLeft.getAmbientMode();
+		SensorMode lightRight = colRight.getAmbientMode();
 		
 		float[] leftSamples = new float[lightLeft.sampleSize()];
 		float[] rightSamples = new float[lightRight.sampleSize()];
